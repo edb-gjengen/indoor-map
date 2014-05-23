@@ -1,0 +1,3 @@
+- import SVG in blender, draw cube meshes up from each room
+- format: https://github.com/mrdoob/three.js/tree/master/utils/exporters/blender
+- parser,renderer: three
