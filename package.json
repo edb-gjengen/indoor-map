@@ -9,6 +9,8 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "three": "~0.66.2"
+    "three": "~0.66.2",
+    "libxml-to-js": "~0.3.11",
+    "brfs": "~1.1.1"
   }
 }
