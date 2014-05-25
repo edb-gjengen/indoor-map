@@ -22,3 +22,5 @@
 - Wireframe of room per floor tagged with name of room
 - Highlight room by drawing color semitransparent glowing cube on tob of room floor 
     - Controller by query param and browser controls
+
+# Ref: http://threejs.org/examples/#webgl_lines_colors 
