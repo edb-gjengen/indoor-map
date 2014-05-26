@@ -6,7 +6,10 @@ html
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: black;
+}
+body {
+    background-color: lighten(black, 8%);
+    background: radial-gradient(lighten(black, 10%), black);
 }
 canvas {
     width: 100%;
