@@ -1,26 +1,27 @@
 # Install
 
     npm install
-    npm install -g browserify
+    npm start
+    grunt watch
     
+    # Parse rooms
     node parse.js >> rooms.json
 
-    # TODO doesnt work
-    browserify -t brfs index.js -o bundle.js 
-    open index.html
+# TODO 
 
-# TODO / Plan
+- Draw SVG shapes over PDF maps in Inscape and set id to roomnumber.
+- Parse SVG into suitable json datastructur (room, coordinates, dimensions).
+- Render with three.js like described below.
 
-- Draw SVG-shapes over PDF maps in Inscape and set id to roomnumber.
-- parse SVG into suitable json datastructur (room, coordinates, dimensions)
-
-- render with three.js like described below
+# TODO improvements
+- SVG parser: Allow SVG paths (see utils.js), use custom attribute for room numbers, make more generic 
 
 # Design
 
+Similar to this: http://threejs.org/examples/#webgl_lines_colors
+
 - Black backgrund
 - Wireframe of room per floor tagged with name of room
-- Highlight room by drawing color semitransparent glowing cube on tob of room floor 
-    - Controller by query param and browser controls
+- Highlight room by drawing color semi-transparent glowing cube on tob of room floor 
+    - Controlled by query param and browser controls
 
-# Ref: http://threejs.org/examples/#webgl_lines_colors 
