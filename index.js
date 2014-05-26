@@ -16,7 +16,10 @@ document.body.appendChild( renderer.domElement );
 var green_color = 0x00ff00;
 var red_color = 0xff0000;
 var material = new THREE.MeshBasicMaterial( { color: green_color, wireframe: true } );
-var red_material = new THREE.MeshBasicMaterial( { color: red_color, wireframe: true } );
+var red_material = new THREE.MeshBasicMaterial( { color: red_color } );
+
+// rooms
+var room_height = 120;
 
 function render() {
     var i = 0;
@@ -37,7 +40,7 @@ function onRoomData(data) {
         var cube;
 
         // geometry
-        var geometry = new THREE.PlaneGeometry(room.dimensions.width, room.dimensions.height);
+        var geometry = new THREE.BoxGeometry(room.dimensions.width, room.dimensions.height, room_height);
 
         if(typeof room.number == "object" && (room.number.indexOf("428") > -1 || room.number.indexOf("429") > -1) ) {
             // KAK
@@ -54,12 +57,12 @@ function onRoomData(data) {
         scene.add( cube );
     }
 
-    camera.position.z = 1000;
-    camera.position.x = 500;
-    camera.position.y = -500;
+    camera.position.z = 400;
+    camera.position.x = 450;
+    camera.position.y = -1600;
 
+    camera.rotation.x = 60 * (Math.PI / 180);
     //camera.lookAt(scene.position);
-    //camera.rotation.z = -270 * (Math.PI / 180);
 
     render();
 }
