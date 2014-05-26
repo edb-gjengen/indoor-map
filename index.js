@@ -32,9 +32,7 @@ function render() {
 	renderer.render(scene, camera);
 }
 
-function onRoomData(data) {
-    var i = 0;
-    var rooms = data.rooms;
+function add_rooms(rooms, floor) {
     for(i=0; i<rooms.length; i++) {
         var room = rooms[i];
         var cube;
@@ -51,11 +49,20 @@ function onRoomData(data) {
 
         cube.position.x = room.position.x + room.dimensions.width / 2;
         cube.position.y = room.position.y * -1 - room.dimensions.height / 2; // FIXME why flipped?
+        cube.position.z = floor;
         cube.name = room.number;
 
         cubes.push(cube);
         scene.add( cube );
     }
+}
+
+function onRoomData(data) {
+    var i = 0;
+    var rooms = data.rooms;
+
+    add_rooms(rooms, 0);
+    add_rooms(rooms, room_height * 2); // FIXME: play
 
     camera.position.z = 400;
     camera.position.x = 450;
