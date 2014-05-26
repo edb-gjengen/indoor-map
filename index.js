@@ -46,8 +46,8 @@ function onRoomData(data) {
             cube = new THREE.Mesh( geometry, material );
         }
 
-        cube.position.x = room.position.x;
-        cube.position.y = room.position.y * -1; // FIXME why flipped?
+        cube.position.x = room.position.x + room.dimensions.width / 2;
+        cube.position.y = room.position.y * -1 - room.dimensions.height / 2; // FIXME why flipped?
         cube.name = room.number;
 
         cubes.push(cube);
