@@ -1,2 +1,5 @@
-node_modules
+/css/
+/node_modules/
+
 *.swp
+
