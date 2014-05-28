@@ -3,8 +3,9 @@ var scene = new THREE.Scene();
 
 //var sceneWidth = 1000;
 //var sceneHeight = 1000;
-var sceneWidth = window.innerWidth;
-var sceneHeight = window.innerHeight;
+var smallestSize = Math.min(window.innerWidth, window.innerHeight);
+var sceneWidth = smallestSize;
+var sceneHeight = smallestSize;
 
 var camera = new THREE.PerspectiveCamera( 75, sceneHeight / sceneWidth, 0.1, 2500 );
 
