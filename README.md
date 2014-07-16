@@ -2,19 +2,22 @@
 
     npm install
     npm start
-    grunt watch
+    gulp
+    gulp watch
     
     # Parse rooms
-    node parse.js >> rooms.json
+    node parse.js >> app/rooms.json
 
 # TODO 
 
-- Draw SVG shapes over PDF maps in Inscape and set id to roomnumber.
-- Parse SVG into suitable json datastructur (room, coordinates, dimensions).
-- Render with three.js like described below.
+- [ ] Gulp fixes (move server.js to gulp watch task)
+- [ ] replace libxml-to-js with dom
+- [ ] Draw SVG shapes over PDF maps in Inscape and set id to roomnumber.
+- [ ] Parse SVG into suitable json datastructur (room, coordinates, dimensions).
+- [ ] Render with three.js like described below.
 
 # TODO improvements
-- SVG parser: Allow SVG paths (see utils.js), use custom attribute for room numbers, make more generic 
+- [ ] SVG parser: Allow SVG paths (see utils.js), use custom attribute for room numbers, make more generic 
 
 # Design
 

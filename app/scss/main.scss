@@ -10,10 +10,7 @@ html
 body {
     background-color: lighten(black, 8%);
     background: radial-gradient(lighten(black, 10%), black);
-}
-canvas {
-    width: 100%;
-    height: 100%;
+    text-align: center;
 }
 #svg {
     display: none;

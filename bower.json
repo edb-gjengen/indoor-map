@@ -1,0 +1,19 @@
+{
+  "name": "indoormap",
+  "version": "0.0.1",
+  "authors": [
+    "EDB-gjengen <kak-edb@studentersamfundet.no>"
+  ],
+  "description": "Indoor map of Chateau Neuf",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://edb.neuf.no",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -13,13 +13,30 @@
     "libxml-to-js": "~0.3.11"
   },
   "devDependencies": {
-    "express": "^4.3.1",
-    "node-sass": "latest",
-    "grunt": "latest",
-    "grunt-autoprefixer": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-sass": "latest",
-    "matchdep": "latest",
-    "morgan": "^1.1.1"
+    "express": "latest",
+    "morgan": "^1.1.1",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-bower-files": "latest",
+    "gulp-cache": "latest",
+    "gulp-clean": "latest",
+    "gulp-csso": "latest",
+    "gulp-filter": "latest",
+    "gulp-flatten": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-jshint": "latest",
+    "gulp-livereload": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-ruby-sass": "latest",
+    "gulp-size": "latest",
+    "gulp-uglify": "latest",
+    "gulp-useref": "latest",
+    "jshint-stylish": "latest",
+    "opn": "latest",
+    "wiredep": "latest",
+    "gulp-plumber": "latest",
+    "gulp-sass": "latest",
+    "gulp-util": "latest",
+    "gulp-concat": "latest"
   }
 }
