@@ -121,25 +121,25 @@
         //camera.lookAt(scene.position);
 
         /* FX */
-        //var renderModel = new THREE.RenderPass( scene, camera );
-        //var effectBloom = new THREE.BloomPass( 1.1 );
-        //var effectCopy = new THREE.ShaderPass( THREE.CopyShader );
+        var renderModel = new THREE.RenderPass( scene, camera );
+        var effectBloom = new THREE.BloomPass( 1.1 );
+        var effectCopy = new THREE.ShaderPass( THREE.CopyShader );
 
-        //effectFXAA = new THREE.ShaderPass( THREE.FXAAShader );
+        effectFXAA = new THREE.ShaderPass( THREE.FXAAShader );
 
-        //var width = window.innerWidth || 2;
-        //var height = window.innerHeight || 2;
+        var width = window.innerWidth || 2;
+        var height = window.innerHeight || 2;
 
-        //effectFXAA.uniforms.resolution.value.set( 1 / width, 1 / height );
+        effectFXAA.uniforms.resolution.value.set( 1 / width, 1 / height );
 
-        //effectCopy.renderToScreen = true;
+        effectCopy.renderToScreen = true;
 
-        //composer = new THREE.EffectComposer( renderer );
+        composer = new THREE.EffectComposer( renderer );
 
-        //composer.addPass( renderModel );
-        //composer.addPass( effectFXAA );
-        //composer.addPass( effectBloom );
-        //composer.addPass( effectCopy );
+        composer.addPass( renderModel );
+        composer.addPass( effectFXAA );
+        composer.addPass( effectBloom );
+        composer.addPass( effectCopy );
 
         render();
     }

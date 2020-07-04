@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -7,7 +8,7 @@ body, html {
 
 body {
   background-color: #141414;
-  background: radial-gradient(#1a1a1a, #000000);
+  background: radial-gradient(#1a1a1a, black);
   text-align: center; }
 
 #svg {
